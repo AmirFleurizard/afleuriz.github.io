@@ -51,3 +51,40 @@ nav
 {
 	text-align: center;
 }
+tbody tr:nth-child(odd) td
+{
+	background-color: lightblue;
+	color: blue;
+}
+tbody tr:nth-child(even) td
+{
+	background-color: grey;
+	color: black;
+}
+
+table
+{
+	border-collapse: collapse;
+	
+	margin: 20px;
+}
+
+thead
+{
+	background-color: blue;
+}
+
+th, td
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+	
+}
+
+
+.right
+{
+	text-align: right;
+}
