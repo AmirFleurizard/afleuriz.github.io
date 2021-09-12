@@ -83,6 +83,15 @@ th, td
 	
 }
 
+input
+{
+
+	color: brown;
+	border: 1px solid brown;
+	font-weight: 500;
+	text-align: left;
+	background-color: silver;
+}
 
 .right
 {
