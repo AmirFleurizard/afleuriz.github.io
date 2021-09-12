@@ -19,36 +19,54 @@
 	</nav>	
 	
 	<main>
-		<h2>Introduction</h2>
-		
-		<figure>
-			<a href="images/IMG_9414.jpg">
-			    <img src="images/IMG_9414.gif" width="400" height="220" alt="Amir pointing at a recycling bin, Photo by Adam">
-			</a>
-			<figcaption>Amir Fleurizard pointing at a recycling bin, Photo by Adam</figcaption>
-		</figure>
-        <ul>
-            <li>Personal background: My name is Amir Fleurizard and I am from Winston-Salem. North Carolina. I am currently a junior at UNC Charlotte pursuing a master's degree in Computer Science with hopes of starting a game development company.</li>
-            <li>Professional: I'm striving to become a successful entrepreneur and game designer.</li>
-            <li>Academic background: I'm currently a junior at UNC Charlotte pursuing a masters degree in Computer Science. I am also a member/graduate of various honors and leadership organizations on campus such as the Emerging Leaders Program, the Bonner Leaders Program, and now the Campus Activity Board.</li>
-            <li>Background in the subject matter of this course: I've been interested in video game development since I was younger and in high school I was finally able to try my hand at the art and I loved it. Now in college I am pursuing my passion in game design through earning a degree.</li>
-            <li>Primary Computer Platform: My primary computer platorm is Windows 10.</li>
-            <li>Courses I'm taking and reason for each: 
-                <ul>
-                    <li>ITCS 3153 - Introduction to Artificial Intelligence - I'm taking this course because AI is a really interesting topic and I want to learn more about it.</li>
-                    <li>ITCS 3160 - Database Design and Implementation - I'm taking this course because it is required for my major.</li>
-                    <li>ITIS 3135 - Web App Design and Implementation - I feel like this course will be helpful for future endeavors so I took it.</li>
-                    <li>ITSC 2600 - Community Outreach Seminar - I am passionate about helping the people in Charlotte.</li>
-                    <li>ITSC 3688 - Comp & Their Impact on Society - I've studied the impact of computer science in highschool so I was excited to see that their was a college level course I could take to learn even more.</li>
-					<li>MATH 2164 - Matrices and Linear Algebra - I took this course because it is required.</li>
-				</ul>
-            </li>
-			<li>Funny story or interesting item about yourself to remember you by:
-                I'm a photographer and I'm starting a photography business soon.</li>
-            <li>I'd also like to share:
-                I'm hoping to graduate next year.</li>
-        </ul>
+		<h2>Activity #3 - HTML Forms Submission</h2>
 	
+		<form action="#">
+  <label for="fName">First name:</label><br>
+  <input type="text" id="fName" name="fName" placeholder="Jermaine" value="" required><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lName" name="lName" placeholder="Cole" value="" required><br><br>
+  <label for="password">Password:</label><br>
+  <input type="text" id="password" name="password" placeholder="dreamvile2007" value="" required><br><br>
+   <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="jCole@uncc.edu" value="" required><br><br>
+  <label for="age">Age:</label><br>
+  <input type="number" size="2" min="17" max="99" placeholder="36" id="age" name="age" value="" required><br><br>
+ 
+  
+  <label for="pancakes">Pancakes or Waffles?</label><br>
+  <input type="radio" id="pancakes" name="favFood" value="Pancakes">
+  <label for="html">Pancakes</label><br>
+  <input type="radio" id="waffles" name="favFood" value="Waffles">
+  <label for="waffles">Waffles</label><br><br>
+  
+  <label for="pets">Pets</label><br>
+  <input type="checkbox" id="pets" name="pets1" value="Dog">
+  <label for="pets"> I have a dog</label><br>
+  <input type="checkbox" id="pets" name="pet2" value="Cat">
+  <label for="pets"> I have a cat</label><br>
+  <input type="checkbox" id="pets" name="pet3" value="parrot">
+  <label for="pets"> I have a parrot</label><br>
+  <input type="checkbox" id="pets" name="pet4" value="raccoon">
+  <label for="pets"> I have a raccoon?</label><br><br>
+ 
+ <label> Gender </label>  
+<select>  
+<option value = "Male"> Male   
+</option>  
+<option value = "Female"> Female   
+</option>  
+<option value = "Non-Binary"> Non-Binary  
+</option>  
+<option value = "Prefer not to answer"> Prefer not to answer  
+</option>  
+</select> <br><br>
+  
+  <input type="submit" value="Submit">
+  
+  </form>
+  
+		
 	</main>
 	
 	<footer>
