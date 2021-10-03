@@ -120,3 +120,16 @@ footer
 	font-size: 12px;
 	text-align: center;
 }
+
+.calculatorButton
+{
+	
+	border: black;
+	border-style: double;
+	background-color: white;
+	color: black;
+	margin: 3px, 3px;
+	cursor: pointer;
+	font-size: 16px;
+	
+}
