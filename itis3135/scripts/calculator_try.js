@@ -1,10 +1,14 @@
 var num1 = "";
 var num2 = "";
 var sum;
-var tempNum;
+//var tempNum;
 var operation;
-var displayNum;
+//this was to display the number but it doesnt seem required and time hasnt permitted me to add it
+var displayNumber;
+
+//this boolean is to check if an operator is in use to let the system know to fill num2
 var operationBoolean;
+//this variable is to check if the number being entered is the first number so the system can know whether a operator or decimal can be used
 var firstNumber = true;
 var decimalUsed = false;
 
@@ -64,6 +68,7 @@ function multiplication()
 	}
 }
 
+//this part was the only difficult part because I had to think of so many scenarios and account for what I could think of
 function equals()
 {
 	if(num2 != "")
@@ -287,6 +292,7 @@ function one()
 	
 }
 
+//this function puts a zero down
 function zero()
 {
 	
@@ -311,6 +317,7 @@ function zero()
 	
 }
 
+//function to add decimal and it will also check to see if a decimal is in use
 function decimal()
 {
 	
@@ -346,22 +353,3 @@ function ac()
 	sum = 0;
 	
 }
-/*
-const calculate = (n1, operator, n2) => {
-  let result = ''
-  
-  if (operator === 'add') {
-    result = n1 + n2
-  } else if (operator === 'subtract') {
-    result = n1 - n2
-  } else if (operator === 'multiply') {
-    result = n1 * n2
-  } else if (operator === 'divide') {
-    result = n1 / n2
-  }
-  
-  return result
-}
-*/
-
-//parseFloat()
