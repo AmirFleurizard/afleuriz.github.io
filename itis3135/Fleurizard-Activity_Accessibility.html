@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  
+  <link href="styles/Fleurizard-Activity_Accessibility.css" rel="stylesheet" type="text/css" >
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+
+    <table class="center">
+
+<h3>Candle Delight</h3>
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th >TYPE</th>
+          <th >PRODUCT</th>
+          <th >FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <td><img src = "images/Birthdy-Candles.jpg" alt = "Birthday Candles"/></td>
+          <td>
+		  <ol start = "1">
+		  <li>Comes in a range of fun, vibrant colors</li>
+		  <li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+		  <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+		  </ol>
+		  </td>   
+        <!--</td>-->
+        </tr>
+        <tr>
+            <th>Voltives</th>
+            <td><img src = "images/voltives.jpg" alt = "Voltives"/></td>
+            <td>
+			<ol start = "1">
+		  <li>Inexpensive and easy to use</li>
+		  <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+		  </ol>
+		  </td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td><img src = "images/taper-candles.jpg" alt = "Taper Candles"/></td>
+              <td>
+			  <ol start = "1">
+		  <li>Commonly known as window candles</li>
+		  <li>Long, slender constructions add dimension to table tops</li>
+		  </ol>
+			  </td>
+            </tr>
+      </tbody>
+    </table>
+     <!--Add the form here-->
+    
+	<h3>Enter your name and phone number to win a gift!</h3>
+   
+   <form action = "#">
+   <label for="name">Name:</label>
+   <input id="name" type = "text" autocomplete = "name" aria-required = "true">
+   
+   <label for="phonenumber">Phone Number:</label>
+   <input id="phonenumber" type = "text" autocomplete = "phonenumber" aria-required = "true" required>
+   
+   <input type="submit" value="Submit" action = "#">
+   </form>
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
