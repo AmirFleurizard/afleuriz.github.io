@@ -1,4 +1,3 @@
-
 /* got this from coolors.co - please improve!
  https://coolors.co/b5d6b2-53131e-5a464c-fffacc-ffefbd
 */
@@ -143,7 +142,7 @@ footer
 .container
 {
 	
-	width: 540px;
+	width: 500px;
 	margin: 40px auto;
 	overflow: auto;
 	
@@ -152,8 +151,8 @@ footer
 .slider-inner
 {
 	
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
 	position: relative;
 	overflow: hidden;
 	float: left;
@@ -166,8 +165,8 @@ footer
 {
 	
 	display: none;
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
 	
 }
 
@@ -178,7 +177,7 @@ footer
 	
 }
 
-.previous,.next
+.prev,.next
 {
 	
 	float: left;
@@ -188,7 +187,7 @@ footer
 	width: 50px;
 }
 
-.previous
+.prev
 {
 	
 	position: relative;
