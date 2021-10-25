@@ -5,12 +5,13 @@ function alerts()
 
 }
 
+/*
 function imageLink()
 {
 	
-	var currentImageClass = document.getElementsByClassName("active");
+	var currentImageClass = document.getElementsByClassName('active');
 	
-	if(currentImageClass.getAttribute('alt') == "Image 1"){
+	if(currentImageClass.alt == "Image 1"){
 		
 	}else if('.active'.image.getAttribute('alt'); == "Image 2"){
 		
@@ -25,29 +26,38 @@ function imageLink()
 	}
 	
 }
+*/
 	
-$(document).ready(function(){
+$(document).ready(function()
+{
 	
 	
-	$('.next').on('click', function(){
+	$('.next').on('click', function()
+	{
 		
-		var currentImg = $('.active');
-		var nextImg = currentImg.next();
+		var currentImage = $('.active');
+		var nextImage = currentImage.next();
 		
-		if(nextImg.length){
-			currentImg.removeClass('active').css('z-index', -10);
-			nextImg.addClass('active').css('z-index', 10);
+		if(nextImage.length){
+			
+			currentImage.removeClass('active').css('z-index', -10);
+			nextImage.addClass('active').css('z-index', 10);
+			
 		}
 	});
 	
-	$('.prev').on('click', function(){
+	$('.prev').on('click', function()
+	{
 		
-		var currentImg = $('.active');
-		var prevImg = currentImg.prev();
+		var currentImage = $('.active');
+		var prevImage = currentImage.prev();
 		
-		if(prevImg.length){
-			currentImg.removeClass('active').css('z-index', -10);
-			prevImg.addClass('active').css('z-index', 10);
+		if(prevImg.length)
+		{
+			
+			currentImage.removeClass('active').css('z-index', -10);
+			prevImage.addClass('active').css('z-index', 10);
+			
 		}
 	});
 });
