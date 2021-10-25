@@ -46,18 +46,20 @@ $(document).ready(function()
 		}
 	});
 	
-	$('.prev').on('click', function()
+	$('.previous').on('click', function()
 	{
 		
 		var currentImage = $('.active');
-		var prevImage = currentImage.prev();
+		var previousImage = currentImage.previous();
 		
-		if(prevImg.length)
+		if(previousImage.length)
 		{
 			
 			currentImage.removeClass('active').css('z-index', -10);
-			prevImage.addClass('active').css('z-index', 10);
+			previousImage.addClass('active').css('z-index', 10);
 			
 		}
+		
 	});
+	
 });

@@ -178,7 +178,7 @@ footer
 	
 }
 
-.prev,.next
+.previous,.next
 {
 	
 	float: left;
@@ -188,7 +188,7 @@ footer
 	width: 50px;
 }
 
-.prev
+.previous
 {
 	
 	position: relative;
