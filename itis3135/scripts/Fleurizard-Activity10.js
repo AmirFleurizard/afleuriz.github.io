@@ -20,15 +20,50 @@ $(document).ready(function() {
 			
 		}
 		
-		$("pic_holder")
+		$("#pic_holder").append("<ul>");
+		
+		$("#pics_holder ul").css("width", (count)*990);
+		
+		for(var i = 0; i<count-1; i++){
+			var $li = $("<li>").append($li);
+			$("#pics_holder ul").append($li);
+		}
+		
+		var $last_li = $("<li><img src="" + pics[pics.length-1][0];
+		$("#pics_holder ul").prepend($last_li);
 
         // set up the event handlers for each link
 
-    			// get the image URL and caption for each image and animate the caption
+    	$("#image_list").click(function (evt) {
 
-            // cancel the default action of each link
+		// cancel the default action of the link
 
+		evt.preventDefault();
 
-    // move the focus to the first link
+		var imageURL = $(this).attr("href");
+
+		var caption = $(this).attr("title");
+
+		$("#caption").fadeOut(1000, function(){
+
+		$("#caption").text(caption).fadeIn(1000);
+
+		});
+
+		$("#image").fadeOut(1000, function(){
+
+		$("#image").attr("src", imageURL).fadeIn(1000);
+
+		});
+
+		}); // end click
+
+		// move focus to first thumbnail
+
+		$("li:first-child a").focus();
+
+		$("#image").hide().fadeIn(1000);
+
+		$("#caption").hide().fadeIn(1000);
 
 }); // end ready
