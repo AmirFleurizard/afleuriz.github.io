@@ -8,11 +8,11 @@ $(document).ready(function() {
 	
 }); // end ready
 
-function consumeJSON(jsonURL)
+function consumeJSON(jsonFileURL)
 {
 	
 	$.ajax({
-		url: jsonURL,
+		url: "json_files/" + jsonFileURL,
 		dataType: "text",
 		success: function (data) 
 		{
@@ -26,4 +26,5 @@ function consumeJSON(jsonURL)
 		}
 	});
 }
+
 
