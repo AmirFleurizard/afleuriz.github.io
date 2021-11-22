@@ -13,7 +13,7 @@ $(document).ready(function() {
         success: function(data) {
             $("#team").html("");
             $.each(data, function(){
-				$.each(this, function(value){
+				$.each(this, function(key, value){
 					$("#team").append(
 					"Name: " + value.name + "<br>" +
 					"Title: " + value.title + "<br>" +
