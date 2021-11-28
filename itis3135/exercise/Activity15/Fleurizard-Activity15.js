@@ -1,8 +1,8 @@
-$(document).ready(function(){
-	$.getJson("facultyList.json", function(data){
+/*$(document).ready(function(){
+	$.getJSON("facultyList.json", function(data){
 		$.each(data, function(){
 			$.each(this, function(key, value){
-				$("faculty").append(
+				$("#faculty").append(
 				"<img src=" + "'" + value.image + "'><br>" +
 				"<h2>" + value.full_name + "</h2>" +
 				"<h3>" + value.department + "</h3>" +
@@ -12,4 +12,18 @@ $(document).ready(function(){
 		});
 	});
 
-});
+});*/
+
+$(document).ready(function(){ 
+    $.getJSON("facultyList.json", function(data){ 
+        $.each(data, function() { 
+            $.each(this, function(key, value) { 
+                $("#faculty").append( 
+                    "Name: " + value.full_name + "<br>" +  
+                    "Title: " + value.department + "<br>" +  
+                    "Bio: " + value.bio + "<br><br>" 
+                ); 
+            }); 
+        });  
+    }); 
+}); 
