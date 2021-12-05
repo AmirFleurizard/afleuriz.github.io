@@ -5,6 +5,7 @@
 	<title>Work</title>
 	<script src="scripts/portfolio.js"></script>
 	<link rel="stylesheet" href="styles/default.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
 <div id="header">
@@ -18,42 +19,28 @@
 </div>
 
 <div id="contents">
-	<h1>Work</h1>
+	<h1>Portfolio<h1>
+	<h2>Contact Me</h2>
 	
+	<input type = "button" onclick = "alerts()" value = "Alert"> 
+	<form id="form">
 	
-	<form>
-	
-		<label for="fName">First name:</label><br>
-		<input type="text" id="fName" name="fName" placeholder="Jermaine" required><br><br>
-		<label for="lName">Last name:</label><br>
-		<input type="text" id="lName" name="lName" placeholder="Cole" required><br><br>
+		<p id="returnmessage"></p>
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" placeholder="Jermaine Cole" required><br><br>
 		<label for="email">Email:</label><br>
 		<input type="email" id="email" name="email" placeholder="jCole@uncc.edu" required><br><br>
-		<label for="password">Message:</label><br>
-		<input type="text" id="message" name="message" placeholder="dreamville" required><br><br>
-		
+		<label for="contact">Contact Number:</label><br>
+		<input type="text" id="contact" name="contact" placeholder="10 digit Mobile #."/><br><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message" placeholder="Message" required></textarea><br><br>
 	
-		<input type="button" onclick = "displayInfo()" value="Submit">
+		<input type="button" id="submit" value="Send Message">
 		
 	</form>
 	
-	<h2>This is what you've entered:</h3>
-	
-	<div id = resultName>
-	</div>
-	<br>
-	<div id = resultEmail>
-	</div>
-	<br>
-	<div id = resultMessage>
-	</div>
-	
-	
-	
 	</div>
 
-
-<a href="#contents" class="top">&#9650; Top</a>
 
 <div id="footer">
 	Website created by Amir Fleurizard.
