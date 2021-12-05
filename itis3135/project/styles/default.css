@@ -84,7 +84,9 @@ li.page a:hover, li.link a:hover {
 	color: lightcyan;
 }
 
-
+.bx-wrapper {
+	margin-bottom: 20px;
+}
 
 
 
