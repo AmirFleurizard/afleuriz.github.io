@@ -12,7 +12,7 @@
 	document.getElementById("resultMessage").innerHTML = "Message: " + message;
 	
 }*/
-
+/*
 $(document).ready(function() {
 	$("#submit").click(function() 
 	{
@@ -44,21 +44,23 @@ $(document).ready(function() {
 		
 	});
 	
-	$("#slider").bxSlider({
-        auto: true,
+});*/
+
+$(document).ready(function() {
+    $("#slider").bxSlider({
+        auto: false,
 		maxSlides: 1,
 		minSlides: 1,
         slideWidth: 500,
         slideMargin: 20,
-		randomStart: true,
+		randomStart: false,
 		captions: true,
-		speed: 3000,
+		speed: 2000,
 		pagerType: 'short',
         pagerSelector: '#id_pager',
 		moveSlides: 1
 		
     });
-	
 });
 
 function alerts(){
@@ -67,7 +69,7 @@ function alerts(){
 
 }
 	
-<!-- jQuery call to the accordion() method. -->
+//jQuery call to the accordion() method.
 $(document).ready(function() {
 	$('#accordion').accordion({
 		
@@ -76,3 +78,18 @@ $(document).ready(function() {
 		
 	});
 });
+
+$(document).ready(function(){ 
+    $.getJSON("aboutme.json", function(data){ 
+        $.each(data, function() { 
+            $.each(this, function(key, value) { 
+                $("#about").append(
+					"<img src=" + "'" + value.image + "'><br>" +
+					"<h2>" + value.full_name + "</h2>" +
+					"<h3>" + value.major + "</h3>" +
+					"<p>" + value.bio + "</p><br>"
+                ); 
+            }); 
+        });  
+    }); 
+}); 

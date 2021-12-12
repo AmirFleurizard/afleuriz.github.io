@@ -3,7 +3,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2 h3
+h1,h2,h3
 {
 	
 	text-align: center;
@@ -84,10 +84,15 @@ li.page a:hover, li.link a:hover {
 	color: lightcyan;
 }
 
+
+#id_pager {
+	text-align: center;
+	font-size: 90%;
+}
+
 .bx-wrapper {
 	margin-bottom: 20px;
 }
-
 
 
 
