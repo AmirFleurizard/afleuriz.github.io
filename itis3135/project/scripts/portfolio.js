@@ -79,17 +79,20 @@ $(document).ready(function() {
 	});
 });
 
-$(document).ready(function(){ 
-    $.getJSON("aboutme.json", function(data){ 
-        $.each(data, function() { 
-            $.each(this, function(key, value) { 
-                $("#about").append(
-					"<img src=" + "'" + value.image + "'><br>" +
-					"<h2>" + value.full_name + "</h2>" +
-					"<h3>" + value.major + "</h3>" +
-					"<p>" + value.bio + "</p><br>"
-                ); 
-            }); 
-        });  
-    }); 
-}); 
+$(document).ready(function (){
+
+	//fetches data from json
+	$.getJSON("aboutme.json", function (data) {
+						
+		//although in my project their is only one set of data, this would have interated through the objects
+		$.each(this, function(key, value) { 
+			$("#about").append(
+				"<img src=" + "'" + value.image + "'><br>" +
+				"<h2>" + value.full_name + "</h2>" +
+				"<h3>" + value.major + "</h3>" +
+				"<p>" + value.bio + "</p><br>"
+			); 
+		});
+								
+	});
+});
