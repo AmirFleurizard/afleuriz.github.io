@@ -1,5 +1,6 @@
 <?php
-if (isset($_REQUEST['name'],$_REQUEST['email'])) {
+if (isset($_REQUEST['name'],$_REQUEST['email'])) 
+{
       
     $name = $_REQUEST['name'];
     $email = $_REQUEST['email'];
@@ -7,7 +8,7 @@ if (isset($_REQUEST['name'],$_REQUEST['email'])) {
     $message = $_REQUEST['message'];
       
     
-    $to = 'someaddress@example.com';
+    $to = 'sample@uncc.edu';
       
     $subject = 'Contact Request From Website';
     $headers = "From: ".$name." <".$email."> \r\n";

@@ -36,7 +36,9 @@ $(document).ready(function(){
         $.each(data, function() { 
             $.each(this, function(key, value) { 
                 $("#about").append(
+					"<center>" +
 					"<img src=" + "'" + value.image + "' width=" + 400 + " height=" + 600 + " alt='Client headshot, Photo by Amir'><br>" +
+					"</center>" +
 					"<h2>" + value.full_name + "</h2>" +
 					"<h3>" + value.major + "</h3>" +
 					"<p>" + value.bio + "</p><br>"
