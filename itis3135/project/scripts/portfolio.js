@@ -1,10 +1,13 @@
 $(document).ready(function() {
+	//slider widget
     $("#slider").bxSlider({
+		//I decided to not make it automatically cycle
         auto: false,
 		maxSlides: 1,
 		minSlides: 1,
         slideWidth: 500,
         slideMargin: 20,
+		//the random start felt unnecessary so I made it false
 		randomStart: false,
 		captions: true,
 		speed: 2000,
@@ -34,7 +37,9 @@ $(document).ready(function() {
 $(document).ready(function(){ 
     $.getJSON("aboutme.json", function(data){ 
         $.each(data, function() { 
+		//loops through json
             $.each(this, function(key, value) { 
+			//appends info into designated div element
                 $("#about").append(
 					"<center>" +
 					"<img src=" + "'" + value.image + "' width=" + 400 + " height=" + 600 + " alt='Client headshot, Photo by Amir'><br>" +
@@ -51,7 +56,6 @@ $(document).ready(function(){
 $(document).ready(function() {
     $('.myform').on('submit',function(){
          
-        // Add text 'loading...' right after clicking on the submit button. 
         $('.output_message').text('Loading...'); 
          
         var form = $(this);
@@ -68,7 +72,6 @@ $(document).ready(function() {
             }
         });
          
-        // Prevents default submission of the form after clicking on the submit button. 
         return false;   
     });
 });
